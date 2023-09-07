@@ -14,5 +14,6 @@ namespace Ticari_Otomasyon.Models.Siniflar
         public int Miktar { get; set; }
         public decimal BirimFiyat { get; set; }
         public decimal Tutar { get; set; }
+        public Faturalar Faturalar { get; set; }
     }
 }

@@ -14,5 +14,7 @@ namespace Ticari_Otomasyon.Models.Siniflar
         public string CariSoyad { get; set; }
         public string CariSehir { get; set; }
         public string CariMail { get; set; }
+
+        public SatisHareket SatisHareket { get; set; }
     }
 }

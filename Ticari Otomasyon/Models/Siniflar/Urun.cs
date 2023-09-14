@@ -13,7 +13,7 @@ namespace Ticari_Otomasyon.Models.Siniflar
         public int Urunid { get; set; }
 
         [Column(TypeName = "Varchar")]
-        [StringLength(30)]
+        [StringLength(150)]
         public string UrunAd { get; set; }
 
         [Column(TypeName = "Varchar")]
@@ -27,7 +27,7 @@ namespace Ticari_Otomasyon.Models.Siniflar
         [Column(TypeName = "Varchar")]
         [StringLength(250)]
         public string UrunGorsel { get; set; }
-        public Kategori Kategori { get; set; }
+        public virtual Kategori Kategori { get; set; }
 
         public ICollection <SatisHareket> SatisHarekets { get; set; }
 

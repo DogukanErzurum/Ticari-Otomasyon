@@ -129,8 +129,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KategoriController.cs" />
+    <Compile Include="Controllers\UrunController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202309141432539_düzenleme.cs" />
+    <Compile Include="Migrations\202309141432539_düzenleme.designer.cs">
+      <DependentUpon>202309141432539_düzenleme.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Siniflar\Admin.cs" />
@@ -269,6 +274,7 @@
     <Content Include="Web\src\scss\_variables.scss" />
     <Content Include="Views\Kategori\KategoriEkle.cshtml" />
     <Content Include="Views\Kategori\KategoriGetir.cshtml" />
+    <Content Include="Views\Urun\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -285,6 +291,11 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202309141432539_düzenleme.resx">
+      <DependentUpon>202309141432539_düzenleme.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
